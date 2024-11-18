@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Phần bên trái -->
+        <FrameLayout
+            android:id="@+id/leftPanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rightPanel"
+            app:layout_constraintWidth_percent="0.5">
+
+            <!-- TextView hiển thị tỉ số -->
+            <TextView
+                android:id="@+id/scoreTextLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#333333"
+                android:textSize="35sp" />
+
+            <!-- Custom View để vẽ -->
+            <com.daikapp.ScoreBida.DrawingView
+                android:id="@+id/drawingViewLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="visible"/>
+        </FrameLayout>
+
+        <!-- Phần bên phải -->
+        <FrameLayout
+            android:id="@+id/rightPanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/leftPanel"
+            app:layout_constraintWidth_percent="0.5">
+
+
+            <!-- TextView hiển thị tỉ số -->
+            <TextView
+                android:id="@+id/scoreTextRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFD700"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:textColor="#333333"
+                android:textSize="125sp" />
+
+<!--             Custom View để vẽ -->
+            <com.daikapp.ScoreBida.DrawingView
+                android:id="@+id/drawingViewRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:background="#FFD700"
+                android:gravity="center"
+                android:text="0"
+
+                android:textColor="#333333"
+                android:textSize="125sp"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

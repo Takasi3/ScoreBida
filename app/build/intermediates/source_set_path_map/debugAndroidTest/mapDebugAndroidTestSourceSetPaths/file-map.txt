@@ -1,0 +1,5 @@
+com.daikapp.ScoreBida.test.app-core-1.6.1-0 C:\Users\90528-LVD\.gradle\caches\transforms-4\216e48e94208a7c00b761d3207e4d2ca\transformed\core-1.6.1\res
+com.daikapp.ScoreBida.test.app-androidTest-1 D:\Source\Daik\ScoreBida\app\build\generated\res\resValues\androidTest\debug
+com.daikapp.ScoreBida.test.app-mergeDebugAndroidTestResources-2 D:\Source\Daik\ScoreBida\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.daikapp.ScoreBida.test.app-mergeDebugAndroidTestResources-3 D:\Source\Daik\ScoreBida\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.daikapp.ScoreBida.test.app-debugAndroidTest-4 D:\Source\Daik\ScoreBida\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
